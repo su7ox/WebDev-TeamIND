@@ -1,0 +1,481 @@
+/* INDEX CSS */
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+}
+
+header h2:hover {
+    color: #e74c3c; /* Alizarin Red */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3498db; /* Belize Hole Blue */
+    color: #fff;
+    font-size: large;
+}
+
+header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+        url(backg.png);
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.header-image {
+    text-align: center;
+}
+
+.header-image img {
+    border-radius: 60%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 3.5em;
+}
+
+.index header h1 {
+    color: #ecf0f1; /* Clouds White */
+    animation: fadeInUp 5s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        color: #e74c3c; /* Alizarin Red */
+    }
+    25% {
+        color: #f39c12; /* Orange */
+    }
+    50% {
+        color: #2ecc71; /* Emerald Green */
+    }
+    75% {
+        color: #3498db; /* Belize Hole Blue */
+    }
+    100% {
+        color: #ecf0f1; /* Clouds White */
+    }
+}
+
+header h2 {
+    color: #ecf0f1; /* Clouds White */
+}
+
+header h2:hover {
+    color: #e74c3cd2; /* Alizarin Red with opacity */
+}
+
+nav {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+nav :hover {
+    color: #e74c3cd2; /* Alizarin Red with opacity */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+/* Add styles for the search bar */
+.search-bar-container {
+    text-align: center;
+    margin: 20px;
+    color: #7a7a7ae2;
+}
+
+.search-bar-container input {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-bar-container button {
+    padding: 10px;
+    background-color: #2ecc71; /* Emerald Green */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-bar-container button:hover {
+    background-color: #27ae60; /* Nephritis Green */
+}
+
+/* MAIN CSS */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #95a5a6; /* Concrete Gray */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+h2 {
+    color: #2c3e50e2; /* Midnight Blue with opacity */
+    margin-bottom: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.welcome {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.cta-button {
+    flex-shrink: 0;
+}
+
+.welcome h2 {
+    font-size: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(30, end) infinite;
+}
+
+.course-card {
+    border-radius: 12px;
+    background-color: #7b8f90; /* Silver Gray */
+    padding: 20px;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.course-card h3, .course-card p {
+    color: #050404;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #e74c3c; /* Alizarin Red */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 1s;
+    margin-right: 10px;
+    animation: colours 1s infinite;
+}
+
+.cta-button:hover {
+    background-color: #e86507ad; /* Pomegranate Red */
+}
+
+/* FOOTER CSS */
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button1,
+.button2,
+.button3 {
+    color: #ecf0f1;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+footer div :hover {
+    color: #050404;
+}
+
+.social-footers {
+    display: flex;
+    align-items: center;
+}
+
+.cta-button1 {
+    padding-inline-start: 7;
+    color: #e74c3c; /* Alizarin Red */
+    size: 5px;
+    font-size: 5em;
+    animation: icons 2s ease-in-out forwards infinite;
+}
+
+@keyframes icons {
+    0% {
+        color: #be07f6; /* Light Purple */
+    }
+    25% {
+        color: rgb(130, 7, 253);
+    }
+    50% {
+        color: rgba(26, 11, 240, 0.54);
+    }
+    75% {
+        color: rgb(253, 5, 79);
+    }
+    100% {
+        color: darkmagenta;
+    }
+}
+
+.cta-button2 {
+    text-align: center;
+    padding-inline-start: 7;
+    color: #f39c12; /* Orange */
+    size: 5px;
+    font-size: 5em;
+    animation: icons2 2s ease-in-out forwards infinite;
+}
+
+@keyframes icons2 {
+    0% {
+        color: #f60707; /* Dark Red */
+    }
+    25% {
+        color: rgb(253, 7, 7);
+    }
+    50% {
+        color: rgba(255, 0, 0, 0.83);
+    }
+    75% {
+        color: rgb(253, 5, 79);
+    }
+    100% {
+        color: rgb(255, 1, 1);
+    }
+}
+
+.cta-button3 {
+    text-align: center;
+    padding-inline-start: 7;
+    color: #2ecc71; /* Emerald Green */
+    size: 5px;
+    font-size: 5em;
+    animation: icon3 2s ease-in-out forwards infinite;
+}
+
+@keyframes icon3 {
+    0% {
+        color: #07a6f6; /* Dodger Blue */
+    }
+    25% {
+        color: rgb(0, 72, 255);
+    }
+    50% {
+        color: rgba(0, 255, 255, 0.83);
+    }
+    75% {
+        color: rgb(5, 125, 253);
+    }
+    100% {
+        color: rgb(1, 166, 255);
+    }
+}
+
+/* CONTACT CSS */
+#contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    background-color: #7f8c8d; /* Silver Gray */
+    margin-bottom: 60%;
+}
+
+#contact h2 {
+    font-size: 2.8em;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* SCIENCE CSS */
+.scienceH h1 {
+    animation: fadeInn 4s ease-in-out;
+}
+
+@keyframes fadeInn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.scienceH h1 {
+    color: #ecf0f1; /* Clouds White */
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.scienceH header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+        url(backg1.png);
+    color: #fff;
+    text-align: center;
+    padding: 4em 0;
+}
+
+.bodi {
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Add styles for the search bar */
+.search-bar-science {
+    text-align: center;
+    margin: 20px;
+    color: #7a7a7ae2;
+}
+
+.search-bar-science input {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-bar-science button {
+    padding: 10px;
+    background-color: #2ecc71; /* Emerald Green */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-bar-science button:hover {
+    background-color: #27ae60; /* Nephritis Green */
+}
+
+/* BIOLOGY CSS */
+.bioH h1 {
+    color: #ecf0f1; /* Clouds White */
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.Biobox-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: #050404;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Biobox-container a {
+    display: inline-block;
+    background-color: #e74c3c; /* Alizarin Red */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 1s;
+    margin-right: 10px;
+    animation: colours 2s infinite;
+}
+
+.Biobox-container a:hover {
+    color: #636363d2; /* Alizarin Red with opacity */
+}
+/* Add styles for the search bar */
+.search-bar-biology {
+    text-align: center;
+    margin: 20px;
+    color: #7a7a7ae2;
+}
+
+.search-bar-biology input {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-bar-biology button {
+    padding: 10px;
+    background-color: #2ecc71; /* Emerald Green */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-bar-biology button:hover {
+    background-color: #27ae60; /* Nephritis Green */
+}
