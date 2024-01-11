@@ -8,6 +8,70 @@
     <title>Current Affairs</title>
 </head>
 <body>
+    <div class="bioH">
+        <header class="header-with-animation">
+            <h1>Current Affairs</h1>
+        </header>
+    </div>
     
+    <nav>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#courses">Courses</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-bar-science">
+        <input type="text" id="searchInput" placeholder="Search Subjects...">
+        <button class="search-button" onclick="searchSubjects()">Search</button>
+    </div>
+    <center><h2>Subjects</h2></center>
+    
+    <div class="bodi">
+        <!-- First Row -->
+        <div class="Biobox-container">
+            <div class="box">
+                <h3>International Affairs</h3>
+                <p>About International Affairs</p>
+                <a href="international.html" class="cta-button">Topics</a>
+            </div>
+            <div class="box">
+                <h3>National Affairs</h3>
+                <p>About National Affairs</p>
+                <a href="national.html" class="cta-button">Topics</a>
+            </div>
+            <div class="box">
+                <h3>Economic Affairs</h3>
+                <p>About Economic Affairs</p>
+                <a href="economic.html" class="cta-button">Topics</a>
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="Biobox-container">
+            <div class="box">
+                <h3>Social Affairs</h3>
+                <p>About Social Affairs</p>
+                <a href="social.html" class="cta-button">Topics</a>
+            </div>
+            <div class="box">
+                <h3>Political Affairs</h3>
+                <p>About Political Affairs</p>
+                <a href="political.html" class="cta-button">Topics</a>
+            </div>
+            <div class="box">
+                <h3>Environmental Affairs</h3>
+                <p>About Environmental Affairs</p>
+                <a href="environmental.html" class="cta-button">Topics</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Add the CSS class dynamically for header animation
+        const header = document.querySelector('.header-with-animation');
+        header.classList.add('header-animation');
+    </script>
 </body>
 </html>
