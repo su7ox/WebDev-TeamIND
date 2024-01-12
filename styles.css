@@ -49,8 +49,8 @@ header h1 {
 }
 
 .index header h1 {
-    color: #ecf0f1; /* Clouds White */
-    animation: fadeInUp 5s ease-out;
+    color: #a9e5f4; /* Clouds White */
+    animation: fadeInUp 5s ease-out infinite;
 }
 
 @keyframes fadeInUp {
@@ -85,6 +85,23 @@ nav {
     padding: 10px;
     text-align: center;
     font-size: 1.1em;
+    position: relative;
+}
+nav :after{background: none  repeatscroll 
+    0 0 transparent;
+    bottom: 0;
+    content:"";
+    height: 2px;
+    background: #ff0000;
+    left: 50%;
+    transition: width 0.3s ease 0s,left 0.3s easse 0s;
+    width: 100%;
+    left: 0;
+ }
+
+nav :hover :after{
+   width: 100%;
+   left: 0;
 }
 
 nav :hover {
@@ -407,6 +424,38 @@ footer div :hover {
     background-color: #27ae60; /* Nephritis Green */
 }
 
+/* New styles for science boxes */
+.science-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.scienceBox {
+    width: 10%; /* Adjust as needed */
+    padding: 20px;
+    color: black;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+
 /* BIOLOGY CSS */
 .bioH h1 {
     color: #ecf0f1; /* Clouds White */
@@ -417,17 +466,35 @@ footer div :hover {
 
 .Biobox-container {
     display: flex;
+    height: 50%;
     justify-content: space-between;
     margin: 20px;
     color: #050404;
 }
 
 .box {
-    width: 30%;
+    width: 29%;
+    height: 50%;
     padding: 20px;
+    color: black;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.science-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.scienceBox {
+    width: 48%; /* Adjust as needed */
+    padding: 20px;
+    color: black;
     background-color: #f0f0f0;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #000;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -469,7 +536,7 @@ footer div :hover {
 
 .search-bar-biology button {
     padding: 10px;
-    background-color: #2ecc71; /* Emerald Green */
+    background-color: #2ecc71; 
     color: #fff;
     border: none;
     border-radius: 20px;
@@ -477,5 +544,40 @@ footer div :hover {
 }
 
 .search-bar-biology button:hover {
-    background-color: #27ae60; /* Nephritis Green */
+    background-color: #27ae60; 
+}
+
+/* CURRENT AFFAIRS*/
+/* Additional CSS for Header Animation */
+.header-with-animation {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+                url('currentA1.jpg'); /* Replace 'background2.jpg' with your image URL */
+    background-size: cover;
+    animation: rotateFade 20s linear infinite; /* Adjust the duration as needed */
+    color: white; /* Set text color to contrast with the background */
+}
+
+@keyframes rotateFade {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+.animation-header-index {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+                url('backg.png'); /* Replace 'background2.jpg' with your image URL */
+    background-size: cover;
+    animation: slideLoop 15s linear infinite; /* Adjust the duration as needed */
+    color: white; /* Set text color to contrast with the background */
+}
+
+@keyframes slideLoop {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -100% 0%;
+    }
 }
